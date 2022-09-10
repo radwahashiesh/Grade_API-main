@@ -1,0 +1,44 @@
+--------------------------patient-------------------
+register:
+http://localhost:3000/api/v1/patient/addPatient 
+
+{
+    "name":"Ahmed Ali",
+    "patient_email":"ali@gmail.com",
+    "DOB":"2002-12-09",
+    "phone":"20192102382",
+    "history_of_disease":"sssss",
+    "disease_type":"taruma",
+    "status":"rtei",
+    "patient_password":"123456"
+}
+
+
+
+login 
+http://localhost:3000/api/v1/patient/patientLogin
+
+{
+         "patient_email": "ali@gmail.com",
+         "patient_password":"ahmedali1234"
+}
+
+forgetpassword
+http://localhost:3000/api/v1/patient/forgetpass
+
+{
+    "patient_email":"ali@gmail.com"
+}
+
+get all patient
+http://localhost:3000/api/v1/patient/allpatient
+
+
+reset Password
+http://localhost:3000/api/v1/patient/resetpass
+
+{
+    "patient_email":"ali@gmail.com",
+    "newPassword":"ahmedali1234",
+    "confirmPassword":"ahmedali1234"
+}
